@@ -8,7 +8,7 @@
 //* Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
 var infoStudente = {
     nome : "Luke",
-    cognome : "Skywalker",
+    cognome : "Skywalker ,",
     age : 20 + "anni"
 };
 
@@ -23,18 +23,18 @@ for (var key in infoStudente){
 var listaStudenti = [
     {
         nome : "Luke",
-        cognome : "Skywalker",
-        age : 20 + "anni"
+        cognome : "Skywalker ,",
+        age : 20 + "anni;"
     },
     {
         nome : "Tony",
-        cognome : "Stark",
-        age : 24 + "anni"
+        cognome : "Stark ,",
+        age : 24 + "anni;"
     },
     {
         nome : "Bilbo",
-        cognome : "Baggins",
-        age : 22 + "anni"
+        cognome : "Baggins ,",
+        age : 22 + "anni;"
     }
 ];
 
@@ -42,7 +42,7 @@ var listaStudenti = [
 for (var i = 0; i < listaStudenti.length; i++){
     
     document.getElementById("lista_studenti_nome").innerHTML += listaStudenti[i]["nome"] + ", ";
-    document.getElementById("lista_studenti_cognome").innerHTML += listaStudenti[i]["cognome"] + ", ";
+    document.getElementById("lista_studenti_cognome").innerHTML += listaStudenti[i]["cognome"];
 
     for (var j in listaStudenti[i]){
     
@@ -59,7 +59,7 @@ var newAge = parseInt(prompt("prego inserire L'ETA' DEL NUOVO STUDENTE."));
 listaStudenti.push(
     {
         nome : newNome,
-        cognome : newCognome,
+        cognome : newCognome + " ,",
         age : newAge + "anni"
     }
 );
