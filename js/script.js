@@ -9,7 +9,7 @@
 var infoStudente = {
     nome : "Luke",
     cognome : "Skywalker ,",
-    age : 20 + "anni"
+    age : 20 + " anni"
 };
 
 //* Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
@@ -23,18 +23,18 @@ for (var key in infoStudente){
 var listaStudenti = [
     {
         nome : "Luke",
-        cognome : "Skywalker ,",
-        age : 20 + "anni;"
+        cognome : "Skywalker,",
+        age : 20 + " anni;"
     },
     {
         nome : "Tony",
-        cognome : "Stark ,",
-        age : 24 + "anni;"
+        cognome : "Stark,",
+        age : 24 + " anni;"
     },
     {
         nome : "Bilbo",
-        cognome : "Baggins ,",
-        age : 22 + "anni;"
+        cognome : "Baggins,",
+        age : 22 + " anni;"
     }
 ];
 
@@ -44,9 +44,7 @@ for (var i = 0; i < listaStudenti.length; i++){
     document.getElementById("lista_studenti_nome").innerHTML += listaStudenti[i]["nome"] + ", ";
     document.getElementById("lista_studenti_cognome").innerHTML += listaStudenti[i]["cognome"];
 
-    for (var j in listaStudenti[i]){
     
-    };
 }
 
 //* Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
@@ -65,6 +63,9 @@ listaStudenti.push(
 );
 
 
+
+
+//* Stampa lista completa Studenti
 for (var i = 0; i < listaStudenti.length; i++){
 
     for (var j in listaStudenti[i]){
